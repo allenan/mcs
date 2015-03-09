@@ -500,6 +500,16 @@ body.nav-opened .site-wrapper {
     overflow: hidden;
 }
 
+.main-header:before {
+  content: ' ';
+  position: absolute;
+  background: rgba(47, 52, 82, 0.63);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .main-header .inner {
     width: 80%;
 }
@@ -770,6 +780,103 @@ body.nav-opened .nav {
     width: auto;
 }
 
+.home-blog-logo {
+  display: inline-block;
+  width: 100px;
+}
+
+.home-blog-logo img {
+  width: 100px;
+}
+
+.featurette {
+  font-family: "Open Sans";
+  text-align: center;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .featurette {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .featurette {
+    width: 750px;
+  }
+}
+
+.featurette h2 {
+  font-size: 4.2rem;
+}
+
+.featurette .subhead {
+  color: #555;
+  max-width: 80%;
+  margin: auto;
+  font-size: 2.2rem;
+  margin-bottom: 60px;
+  font-weight: 100;
+}
+
+#mc_embed_signup .email {
+  font-family: "Open Sans";
+  padding: 8px;
+  width: 260px;
+}
+
+#mc_embed_signup .button {
+  background: #E26767;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+#mc_embed_signup .button:hover {
+  background: #C94E4E;
+}
+
+.image-cluster {
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-cluster:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(145, 145, 147, 0.2);
+}
+
+.image-cluster img {
+  width: 20%;
+  float: left;
+}
+
+@media (max-width: 376px) {
+  .featurette .subhead {
+    font-size: 1.8rem;
+    max-width: 94%;
+  }
+
+  #mc_embed_signup .email {
+    width: 200px;
+  }
+
+}
+
 .menu-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -853,7 +960,7 @@ body.nav-opened .menu-button .word {
     margin: 10px 0 10px 0;
     font-size: 5rem;
     letter-spacing: -1px;
-    font-weight: 700;
+    font-weight: 300;
     font-family: "Open Sans", sans-serif;
     color: #fff;
 }
